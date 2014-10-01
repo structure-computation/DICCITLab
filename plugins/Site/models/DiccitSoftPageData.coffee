@@ -66,8 +66,9 @@ class DiccitSoftPageData extends TreeItem
         
         bm0 = new MenuButtonItem "Demo", '#demo'
         bm1 = new MenuButtonItem "Video", '#video'
-        bm2 = new MenuButtonItem "Publications", '#publication'
-        bm3 = new MenuButtonItem "Editor", '#editor'
+        bm2 = new MenuButtonItem "Tutoriel", '#tutorial'
+        bm3 = new MenuButtonItem "Publications", '#publication'
+        bm4 = new MenuButtonItem "Editor", '#editor'
         
         link = new MenuLinkItem 
             name: "DICCIT Desk ->" 
@@ -78,6 +79,7 @@ class DiccitSoftPageData extends TreeItem
         menu.add_child bm1
         menu.add_child bm2
         menu.add_child bm3
+        menu.add_child bm4
         menu.add_child link
         
     
@@ -94,7 +96,7 @@ class DiccitSoftPageData extends TreeItem
         @add_child demo
         
         demo_window = new SiteTextItem
-            txt: '<iframe src="http://localhost:8888/softdemo.html#' + @demo_application  + '" width="1100" height="600" frameborder="0" style="border:0"></iframe>'
+            txt: '<iframe src="http://diccit.is-sim.com/softdemo.html#' + @demo_application  + '" width="1100" height="600" frameborder="0" style="border:0"></iframe>'
             fontSize: "18px"
             textAlign: "center"
         demo.add_child demo_window 
@@ -124,7 +126,23 @@ class DiccitSoftPageData extends TreeItem
             textAlign: "center"
         video.add_child video_window 
         
+    add_tutorial_item: () ->
+        tutorial = new SitePartItem 
+                name : 'Tutoriel'
+                type : 'text'
+                balise : 'tutorial'
+                title : true
+                separator  : true
+                background : @backgroundColor.second
+        @add_child tutorial
         
+        tutorial_window = new SiteTextItem
+            name: 'Tutoriel'
+            txt: @demo_app.tutorial_link.get()
+            fontSize: "18px"
+            textAlign: "center"
+        tutorial.add_child tutorial_window 
+    
     add_publication_item: () ->
         publication = new SitePartItem 
                 name : 'Publication'
@@ -151,6 +169,8 @@ class DiccitSoftPageData extends TreeItem
         console.log @demo_app.video_link
         if @demo_app.video_link?
             @add_video_item()
+        if @demo_app.tutorial_link?
+            @add_tutorial_item()
         if @demo_app.publication_link?
             @add_publication_item()
         #menu--------------------

@@ -27,8 +27,8 @@ launch_softpage = ( main = document.body ) ->
         alert "erreur"
     
     soft_demo_data = new DiccitSoftPageData
-        name        : "DICCIT Demo"
-        project_name: "DICCIT Demo"
+        name        : "DICCIT"
+        project_name: "DICCIT"
         demo_application: path
     
     softdemo_view = new SoftHubView main, soft_demo_data
