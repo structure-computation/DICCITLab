@@ -70,7 +70,7 @@ launch_softdemo = ( main = document.body ) ->
                 td.modules.push new TreeAppModule_File
                     name : "Test with my files"
                     home_dir : dir
-                    use_icons   : false
+                    use_icons   : true
                     use_upload  : true
                 td.modules.push new TreeAppModule_Apps false
                 #td.modules.push new TreeAppModule_Projects   

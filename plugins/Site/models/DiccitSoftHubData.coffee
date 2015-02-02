@@ -72,7 +72,7 @@ class DiccitSoftHubData extends TreeItem
         menu.add_child bm2
         menu.add_child bm3
         menu.add_child bm4
-        menu.add_child link
+        #menu.add_child link
 
         
         

@@ -29,7 +29,7 @@ class AdminDeskConfig extends Model
             list_contact            : new Lst
             selected_organisation   : new Lst
             
-        @list_desk_items.push new DeskItem "Files"
+        @list_desk_items.push new DeskItem "Files", "Files"
         
         @selected_list_desk_items.push @list_desk_items[0]
         
