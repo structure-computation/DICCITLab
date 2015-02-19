@@ -328,9 +328,18 @@ class DiccitSoftHubData extends TreeItem
         
         news_1 = new SiteNewsItem
             date : '28-07-2014'
-            title : "mise en ligne de la plate-forme web DICCIT"
+            title : "Mise en ligne de la plate-forme web DICCIT"
             description : "La première version de la plate-forme web DICCIT est en ligne. 
             elle comprend ce site, un journal de démonstration en ligne public ainsi qu'un espace privé pour les membres du consortium."
+            
+        news_2 = new SiteNewsItem
+            date : '19-02-2015'
+            title : "Ajout du premier démonstrateur pour le plugin VirtualGauge"
+            description : "Le plugin VirtualGauges permet la représentation de jauges virtuelles en superposition avec les résultats de calcul 
+              et les résultats d'essais obtenus par corrélation d'images. 
+              La comparaison directe de ces différents résultats devra permettre d'améliorer drastiquement la restitution des essais mécaniques. "
+           
+        news.add_child news_2   
         news.add_child news_1
         
         
@@ -353,7 +362,7 @@ class DiccitSoftHubData extends TreeItem
          
         softlist_mecanical.add_child new CorreliDemoItem
         softlist_mecanical.add_child new GmshDemoItem
-        softlist_mecanical.add_child new StepReaderDemoItem
+        softlist_mecanical.add_child new DICCITVirtualJaugesDemoItem
         softlist_mecanical.add_child new Plot3DDemoItem
         
         #ajout d'applications--------------- 
