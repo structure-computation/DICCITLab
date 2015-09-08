@@ -74,6 +74,9 @@ create_organisation_view = ( config, main = document.body ) ->
     APPS.push new TreeAppApplication_Test
     APPS.push new TreeAppApplication_DICCITVirtualGauge
     APPS.push new TreeAppApplication_Transform
+    APPS.push new TreeAppApplication_Plan
+    APPS.push new TreeAppApplication_PlanProjection
+    APPS.push new TreeAppApplication_FieldCompare
     
     
     #login bar
