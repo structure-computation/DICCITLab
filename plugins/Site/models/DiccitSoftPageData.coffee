@@ -96,7 +96,7 @@ class DiccitSoftPageData extends TreeItem
         
         demo_window = new SiteTextItem
 #             txt: '<iframe src="http://diccit.is-sim.com/softdemo.html#' + @demo_application  + '" width="1100" height="600" frameborder="0" style="border:0"></iframe>'
-            txt: '<iframe src="http://localhost:8888/softdemo.html#' + @demo_application  + '" width="1100" height="600" frameborder="0" style="border:0"></iframe>'
+            txt: '<iframe src="softdemo.html#' + @demo_application  + '" width="1100" height="600" frameborder="0" style="border:0"></iframe>'
             fontSize: "18px"
             textAlign: "center"
         demo.add_child demo_window 
