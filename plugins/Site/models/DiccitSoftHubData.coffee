@@ -362,8 +362,8 @@ class DiccitSoftHubData extends TreeItem
         softlist_mecanical.add_child new CorreliDemoItem
         softlist_mecanical.add_child new GmshDemoItem
         softlist_mecanical.add_child new DICCITVirtualJaugesDemoItem
-        softlist_mecanical.add_child new Plot3DDemoItem
-        
+        softlist_mecanical.add_child new MeshProjectionDemoItem
+        softlist_mecanical.add_child new MeshTransformationDemoItem
         #ajout d'applications--------------- 
        
     
