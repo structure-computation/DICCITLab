@@ -1,6 +1,6 @@
 #
-class MeshPlanProjectionContener extends TreeItem
-    constructor: ( name = "MeshPlanProjectionContener" ) ->
+class ProjectionContener extends TreeItem
+    constructor: ( name = "ProjectionContener" ) ->
         super()
         
         @_name.set name

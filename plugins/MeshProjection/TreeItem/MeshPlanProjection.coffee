@@ -19,10 +19,10 @@ class MeshPlanProjection extends TreeItem
             visualization: @_mesh.visualization
         
         
-        plan = new MeshPlanProjectionContener "plan"
-        vector = new MeshPlanProjectionContener "vector"
-        objet_to_project = new MeshPlanProjectionContener "object to project"
-        output_0 = new MeshPlanProjectionContener "output"
+        plan = new ProjectionContener "plan"
+        vector = new ProjectionContener "vector"
+        objet_to_project = new ProjectionContener "object to project"
+        output_0 = new ProjectionContener "output"
         
         @add_child plan
         @add_child vector
