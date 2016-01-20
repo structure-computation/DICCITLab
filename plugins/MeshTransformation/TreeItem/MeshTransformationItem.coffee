@@ -47,8 +47,7 @@ class MeshTransformationItem extends TreeItem
                     @make_transformation()        
         
     accept_child: ( ch ) ->
-        ch instanceof MeshItem  
-
+        true
 
     make_m_glob: ()->
         #création de la matrice de rotation à partir des trois angles de rotation d'euler
