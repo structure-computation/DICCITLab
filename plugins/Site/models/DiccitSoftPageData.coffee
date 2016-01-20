@@ -108,6 +108,15 @@ class DiccitSoftPageData extends TreeItem
             textAlign: "center"
         demo.add_child demo_window 
         
+        demo_window_link = new SiteTextItem
+            txt: 'full screen demo ->'
+            fontSize: "17px"
+            textAlign: "center"
+            balise: "softdemo.html#" + @demo_application 
+            fontFamily: "'Indie Flower', sans-serif"
+            cursor: "pointer"
+        demo.add_child demo_window_link 
+        
         
     add_video_item: () ->
         video = new SitePartItem 

@@ -8,7 +8,7 @@ class MeshProjectionDemoItem extends TreeItem
             edited_by : 'SC'
             stamp: "img/mesh_projection_icone.png"
             txt: "MeshProjection"
-            demo_app : "MeshMeshProjection"
+            demo_app : "MeshProjectionDemoItem"
             directory : "MeshProjection"
             video_link : undefined
             publication_link : undefined

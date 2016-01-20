@@ -8,7 +8,7 @@ class MeshTransformationDemoItem extends TreeItem
             edited_by : 'SC'
             stamp: "img/mesh_transformation_icone.png"
             txt: "MeshTransformation"
-            demo_app : "MeshTransformationItem"
+            demo_app : "MeshTransformationDemoItem"
             directory : "MeshTransformation"
             video_link : undefined
             publication_link : undefined
