@@ -78,6 +78,7 @@ create_organisation_view = ( config, main = document.body ) ->
     APPS.push new TreeAppApplication_PlanProjection
     APPS.push new TreeAppApplication_MeshProjection
     APPS.push new TreeAppApplication_MeshTransformation
+    APPS.push new TreeAppApplication_MeshFit
     APPS.push new TreeAppApplication_FieldCompare
     
     
